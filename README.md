@@ -1,4 +1,4 @@
-# Windows11 aka If I wanted a Mac I would but a Mac
+# Windows11 aka If I wanted a Mac I would buy a Mac
 
 Guess what?!! M$ has employed a bunch of continuous improvers and they have come up with Windows 11.
 
