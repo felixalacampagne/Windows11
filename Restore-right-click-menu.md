@@ -9,7 +9,9 @@ are of use are obfuscated by unreadable icons…
 To remedy this dire state of affairs:
 - Open a Command Prompt or Terminal, probably not Powershell
 - Execute the following command:
-    reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /ve /d "" /f
+```
+reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /ve /d "" /f
+```
 - Restart Explorer from Task Manager.
 
 Right-click menu should now be back as it should be.
