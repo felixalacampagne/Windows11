@@ -7,7 +7,7 @@ which contains almost nothing of any use – the items that
 are of use are obfuscated by unreadable icons…
 
 To remedy this dire state of affairs:
-- Open a Command Prompt or Terminal, probably not Powershell
+- Open a Command Prompt, aka. Terminal, not Powershell
 - Execute the following command:
 ```
 reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /ve /d "" /f
