@@ -3,7 +3,9 @@
 My desktop, well, under desktop, PC is admitedly quite old at 12 years (possibly more) 
 but it runs Windows 10 just fine and does what I need it to do without too much trouble.
 It is equipped with;
-- 800GB SSD for the OS disk
+- Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+- 8GB RAM
+- Samsung 850EVO 500GB SSD for the OS disk
 - 4TB HDD 5inch for data storage (videos, music)
 - 1TB HDD 5inch for applications and development
 - 500GB HDD 2.5inch for temp data storage (music)
@@ -11,7 +13,7 @@ It is equipped with;
 - 8GB Ram
 - multiple USBs ports hosting various HDDs
 - memory card reader
-- some sort of graphics card which is rarely used as I remote desktop into it
+- Nvidia GeForce GT430 graphics card (rarely used as I remote desktop to the box)
 - Windows 10 Pro
 
 Out of curiosity I researched a replacement on Amazon.be but found that most
