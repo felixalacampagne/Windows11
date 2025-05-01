@@ -1,0 +1,29 @@
+Uninstalled Bnjour as it had a very old date andI figured it must be obsolete now.
+Subsequently iTunes was unable to find any AirPlay devices so concluded that
+Bonjour is still required. Reinstalled latest iTunes and Bonjour was back, with the same
+old date. iTunes could once again see the AirPlay devices.
+
+A few hours later I noticed a message from 'Program Compatibility Assistant' saying
+a Bonjour DLL was blocked from loading into 'Local Security Authority'. I checked the
+'Do not tell me ever again' option. Googling indicates that this is a long known
+problem and that there is no solution as Apple must update Bonjour and refuses to do so.
+
+Having closed the notification I confirmed that iTunes was still showing the 
+available AirPlay devices AND that iTunes could send audio to an AirPlay device. 
+Bonjour service was still running according to Task Manager. 
+
+It did find a suggestion (https://discussions.apple.com/thread/255869043?sortBy=rank) 
+that an 'exception' could be made for the problematic DLL. I haven't tried this yet
+since the major reason for having iTunes, ie. AirPlay, is still working OK.
+
+-) From Registry Editor locate registry key
+   Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa
+-) Find Security Packages and double-click it.
+-) In the list that appears, add a new entry: mdnsnsp.dll
+-) Click OK, close Regedit, and restart your PC.
+
+Note that this suggestion is from an Apple site so is obviously complete bullshit.
+There is no 'Security Packages' under the 'Lsa' key. 
+Maybe creating a key 'Security Packages' and adding a string value with the DLL name
+would work - I guess it's something to try if AirPlay stops working, eg. after rebooting.
+
