@@ -27,3 +27,7 @@ There is no 'Security Packages' under the 'Lsa' key.
 Maybe creating a key 'Security Packages' and adding a string value with the DLL name
 would work - I guess it's something to try if AirPlay stops working, eg. after rebooting.
 
+Checked on another Windows 11 PC running iTunes with working AirPlay and not 
+getting the block notification. On this system there is a 'Security Packages' string
+value in the 'Lsa' key. It is an empty pair of double quotes, ie. "". 
+
