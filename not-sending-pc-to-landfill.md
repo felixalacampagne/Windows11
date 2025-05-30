@@ -66,6 +66,47 @@ I've notice a few strange things since the installation:
   of the disk list in Explorer under Windows 10, but this was the first time I had seen actual errors
   while transferring files.
 
+30-May-2025 
+Realised that the 'Turn On Windows Security Center service' notification that I have been
+seeing off and on for a fair while now on minnie is not related to windows update and clicking
+the notification does not turn on the service even though the notification goes away.
+
+There appear to be two DCOM permission events related to each failed start of the Security 
+Center service:
+
+CLSID Windows.SecurityCenter.WscBrokerManager APPID Unavailable
+CLSID Windows.SecurityCenter.SecurityAppBroker APPID Unavailable
+
+The event message claims 'This security permission can be modified using the Component Services 
+administrative tool.'
+After some googling I discovered that this means 'dcomcnfg'. There is nothing 
+in the list of items in dcomcnfg which matches the values in the events.
+
+So I spent ages trying to figure out what they applied to with no luck. There are
+one or two mentions of the events but never any solutions. 
+
+I tried resetting the security center via the start menu and via powershell.
+
+Nothing works. The only other so called solution is to perform a repair installation
+of Windows which claims to keep your personal files and wipes out all your apps. This
+is a major thing to avoid on minnie. Given that Windows 10 is out of support in Oct 2025
+I figure that this issue, which does not actually stop minnie from doing what I want it to
+but does suggest that it is vulnerable to bad stuff, is the excuse I have been waiting
+for to do the unsupported upgrade to Windows 11. So far the upgraded speedy has been doing
+OK with Windows 11 so now is the time to see if the same will apply to minnie.
+
+For the record minnie is equipped with;
+
+- Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+- 8GB RAM
+- Intel(R) HD Graphics 5500 (128 MB)
+- Liteonit LMH-256V2M-41 MSATA 256GB SSD for the OS disk
+- 2x Realtek PCIe GbE Family NICs
+- uninstalled WiFi NIC which was always causing problems with windows update
+- Windows 10 Pro
+
+Windows 11 installation started by running setup.exe from USB in Windows 10, same as for speedy.
+
 So that's it for now. 
 
 I'll let it run for a few weeks before I contemplate repeating the excerise on the fanless computer. This
