@@ -44,7 +44,7 @@ case it goes away though, this is how it was done (it needs to be made into a .r
 ```
 Windows Registry Editor Version 5.00
 
-; Puts the 'Open command window here' item on the normal right-click menu instead of ctrl-right-click
+; Puts the 'Open command window here' item on the normal right-click menu instead of shift-right-click
 ; 
 ; If windows updates keep on write protecting the normal 'cmd' entry then simply add an alternative one
 ; To restore command prompt to start menu right click goto Settings>Personalisation>Taskbar and uncheck the option
@@ -77,9 +77,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Drive\shell\cpacmd\command]
 @="cmd.exe /s /k pushd \"%V\""
-
-; To restore to the right-click menus it needs a registry update.
-; WARNING: It might be necessary to grant permission to the keys before they can be corrected.
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\cpacmd]
 "HideBasedOnVelocityId"=-
