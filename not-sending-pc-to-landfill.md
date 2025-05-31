@@ -25,9 +25,8 @@ suspiciously had DP video ports instead of HDMI, seemd to have older chipsets,
 were in the wrong language and possibly did not actually meet the Windows 11 requirements. 
 This seemed to be backed up by some of the review comments. By the time I found boxes matching
 my requirements the price had started to be way over what I want to pay
-to replace my perfectly functioning system. Amazon.be did not appear to have
-much of an offering for do-it-yourself assembly of a system and I would need to 
-do much more research to figure out is needed for a self-assembly.
+to replace my perfectly functioning system. I would need to 
+do much more research to figure out what is needed for a self-assembly build.
 
 SO! I decided that it was plenty worth while trying one of the workaround methods to
 put Windows 11 on my apparently obsolete and useless box.
@@ -54,6 +53,12 @@ was successful and an 'installing updates' twirly circle appeared. More time pas
 I returned to the system and lo! my PC looks like a Mac (ugggh!). 
 
 Yippee! It seems I have successfully installed Windows 11 on my piece of scrap computer!
+
+So that's it for now. 
+
+I'll let it run for a few weeks before I contemplate repeating the excerise on the fanless computer. This
+one gave alot of problems when it was upgraded from Windows 7, or was it just a Win10 upgrade, so I 
+anticipate more issues than for the desktop machine.
 
 I've notice a few strange things since the installation:
 - after an upgrade reboot the system did not automatically login anymore. I applied the old fix
@@ -107,9 +112,17 @@ For the record minnie is equipped with;
 
 Windows 11 installation started by running setup.exe from USB in Windows 10, same as for speedy.
 
-So that's it for now. 
+The counter goes up to >90% before warning that a reboot is about to take place. This is the time to remove
+the USB drive to avoid booting from it.
 
-I'll let it run for a few weeks before I contemplate repeating the excerise on the fanless computer. This
-one gave alot of problems when it was upgraded from Windows 7, or was it just a Win10 upgrade, so I 
-anticipate more issues than for the desktop machine.
-  
+The installation proceeded and now minnie is a Windows 11 computer.
+
+Yes, the Security Center service is now running OK. No clue what caused it to stop working in
+the first place - a cynic might think that it was something done deliberately by M$ to increase
+the pressure to update to Windows 11, while knowing full well that said update is not supported.
+
+So I guess now I am at the mercy of M$ deciding to brick my perfectly functioning computers. I suppose
+that most of the functionality of minnie could be performed by a Unix system, ie. Apache and Tomcat web server, 
+OpenVPN server and DNS server. It could probably do the TV EPG download and extraction as I think that exclusively 
+uses scripts or Java. The one thing Unix can't do is serve my music via AirPlay...
+
