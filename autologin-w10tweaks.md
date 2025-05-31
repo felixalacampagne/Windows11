@@ -36,3 +36,57 @@ NB auto-login might be prevented by Windows Hello so it will need to be disabled
 
    Don't know whether workgroups are actually used anymore. It might be something which helps the STBs
    find shared drives though.
+
+## Open Command window here without shift
+
+I think this is no longer necessary with Windows 11 as 'Terminal' appears on the normal right-click menu. Just in
+case it goes away though, this is how it was done (it needs to be made into a .reg file):
+```
+Windows Registry Editor Version 5.00
+
+; Puts the 'Open command window here' item on the normal right-click menu instead of ctrl-right-click
+; 
+; If windows updates keep on write protecting the normal 'cmd' entry then simply add an alternative one
+; To restore command prompt to start menu right click goto Settings>Personalisation>Taskbar and uncheck the option
+; to replace command prompt with power shell
+;
+; Default menu text is
+;@="@shell32.dll,-8506"
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\cpacmd]
+@="Command window here"
+"NoWorkingDirectory"=""
+"Extended"=-
+
+[HKEY_CLASSES_ROOT\Directory\shell\cpacmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cpacmd]
+@="Command window here"
+"NoWorkingDirectory"=""
+"Extended"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cpacmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\cpacmd]
+@="Command window here"
+"NoWorkingDirectory"=""
+"Extended"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell\cpacmd\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; To restore to the right-click menus it needs a registry update.
+; WARNING: It might be necessary to grant permission to the keys before they can be corrected.
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cpacmd]
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\shell\cpacmd]
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell\cpacmd]
+"HideBasedOnVelocityId"=-
+```
