@@ -1,4 +1,5 @@
-Seems like with every update to Windows the continuous improvement grassholes deliver yet another slew of pointless and unwanted icons in the Explorer navigation menu. Here are some clues for removing the most obnoxious ones.
+Seems like with every update to Windows the continuous improvement grassholes deliver yet another slew of pointless and unwanted icons in the Explorer navigation menu with no user friendly way to remove them (well it's not very user friendly to just
+add them in the first place so why bother providing a convenient way to get rid of them?). Here are some clues for removing the most obnoxious ones.
 
 ## Home
 ```
