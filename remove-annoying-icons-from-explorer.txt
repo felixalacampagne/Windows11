@@ -14,7 +14,10 @@ iCloud has decided to pollute the Explorer list just like libraries used to do:
 
 Try:
 Computer\HKEY_CLASSES_ROOT\CLSID\{78E66C0B-0349-41A6-AE0A-A0783B439B47}
-  System.IsPinnedToNamespaceTree: 1
+  System.IsPinnedToNamespaceTree: 0
+
+reg add HKCU\Software\Classes\CLSID\{78E66C0B-0349-41A6-AE0A-A0783B439B47} /v "System.IsPinnedToNameSpaceTree" /t REG_DWORD /d 0 /f
+
 The id might change so probably need to search CLSID for 'iCloud Drive' or 'IsPinnedToNamespaceTree'
 
 OneDrive: Computer\HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}
