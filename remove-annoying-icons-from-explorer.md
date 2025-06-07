@@ -1,3 +1,6 @@
+Seems like with every update to Windows the continuous improvement grassholes deliver yet another slew unwanted noise in the Explorer
+navigation menu. Here are some clues for removing the most obnoxious ones.
+
 ## Home
 ```
 reg add HKCU\Software\Classes\CLSID\{f874310e-b6b7-47dc-bc84-b9e6b38f5903} /v "@" /d "CLSID_MSGraphHomeFolder" /f
