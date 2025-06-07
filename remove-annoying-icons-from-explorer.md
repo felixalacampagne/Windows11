@@ -1,5 +1,4 @@
-Seems like with every update to Windows the continuous improvement grassholes deliver yet another slew unwanted noise in the Explorer
-navigation menu. Here are some clues for removing the most obnoxious ones.
+Seems like with every update to Windows the continuous improvement grassholes deliver yet another slew of pointless and unwanted icons in the Explorer navigation menu. Here are some clues for removing the most obnoxious ones.
 
 ## Home
 ```
